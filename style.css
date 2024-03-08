@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  background-color: #ff4c68;
+  height: 90vh;
+  color: white;
+  align-items: center;
+  overflow: hidden;
+}
+#nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+#nav a {
+  text-decoration: none;
+  color: white;
+}
+#nav ul {
+  display: flex;
+  list-style-type: none;
+}
+#nav ul li {
+  padding: 1rem 2rem;
+}
+#nav ul li a {
+  font-size: 1.6rem;
+}
+#nav .logo {
+  font-size: 2.4rem;
+  padding: 2rem 1rem;
+}
+#header .main .contant-bx,
+#header .main .img-bx {
+  width: 50%;
+}
+.main {
+  display: flex;
+  padding: 0px 8rem;
+}
+.main .contant-bx {
+  position: relative;
+  left: 150px;
+  top: 90px;
+}
+#header .main .contant-bx p {
+  font-size: 4rem;
+}
+#header .main .img-bx img {
+  transform: rotate(25deg);
+  width: 50%;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.btn-box-1 {
+  border: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 4px;
+  color: rgb(254, 252, 252);
+  background-color: #23272b;
+  margin: 10px;
+}
+.btn-box-2 {
+  width: 100px;
+  border: solid 2px white;
+  height: 50px;
+  border-radius: 4px;
+  color: rgb(251, 249, 249);
+  background-color: transparent;
+}
+
+/* #header :hover a,
+.btn-box {
+  color: rgb(20, 19, 18);
+} */
+/* =========feature========== */
+
+.feature {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  height: 15rem;
+  margin: 8rem 0px;
+  align-items: center;
+}
+.feature .ft-box h2 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+.feature .ft-box p {
+  font-size: 20px;
+}
+.ft-box i {
+  font-size: 60px;
+  color: #ff4c68;
+}
+
+/* ========slider======== */
+
+.slider {
+  background-color: #ef8172;
+  height: 90vh;
+  text-align: center;
+  padding-top: 10rem;
+  overflow: hidden;
+}
+.slider-box1 h3 {
+  font-size: 4rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slider-box2 img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.slider .slider-box3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.slider-box3 .img-box {
+  width: 55%;
+  margin: 20px 10px;
+}
+
+/* =======pricing========= */
+.pricing {
+  height: 100vh;
+  text-align: center;
+}
+.pricing h2 {
+  font-size: 50px;
+  padding-top: 5rem;
+}
+.pricing .row {
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-top: 20px; */
+}
+.pricing .card {
+  border: 2px solid black;
+  height: 300px;
+  width: 300px;
+}
+.card .card-header {
+  border: 1px solid black;
+  background-color: #f7f7f7;
+}
+.card-header h4 {
+  font-size: 2rem;
+}
+.card-body {
+  padding: 0 1rem;
+}
+.card-body h5 {
+  font-size: 3rem;
+}
+.card-body p {
+  font-size: 1.8rem;
+}
+.card-body .cta-btn {
+  border-radius: 10px;
+  padding: 0.5rem 4rem;
+  font-size: 20px;
+  margin-top: 40px;
+  border: 1px solid black;
+}
+.card-body .cta-btn-alt {
+  font-size: 20px;
+  padding: 0.5rem 4rem;
+  margin-top: 40px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+#middleheading {
+  margin: 30px 0;
+}
+#download {
+  background-color: #ff4c68;
+  height: 50vh;
+  margin-top: 2rem;
+}
+#download h5 {
+  font-size: 5rem;
+  color: white;
+  font-weight: lighter;
+  padding-top: 2.5rem;
+}
+/* ======footer====== */
+.footer {
+  height: 20vh;
+}
+.footer p {
+  margin: 0 0 20px 0;
+}
+.footer i {
+  padding: 10px;
+  margin: 30px 0 0 0;
+}
+
+/* ====mediya queery===== */
+
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  #header {
+    height: auto;
+  }
+  #nav {
+    display: none;
+  }
+  #header .main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  #header .main .contant-bx,
+  #header .main .img-box {
+    width: 100%;
+  }
+  #header .main .img-box {
+    margin-top: 2rem;
+  }
+  .main .img-box img {
+    transform: rotate(0deg);
+    position: static;
+  }
+  #header .main .contant-bx {
+    position: relative;
+    left: 10px;
+  }
+  .feature {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70vh;
+  }
+  .ft-box {
+    margin: 30px 0;
+  }
+  .slider {
+    height: auto;
+  }
+  .slider .slider-box1 {
+    padding: 10px;
+  }
+  .slider .slider-box3 {
+    flex-direction: column;
+  }
+  .pricing .card {
+    width: 100%;
+  }
+  .card {
+    margin: 20px 0;
+    /* height: 600px; */
+  }
+  .row {
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* height: 150vh; */
+    padding: 1rem;
+  }
+  #download {
+    height: auto;
+  }
+}
